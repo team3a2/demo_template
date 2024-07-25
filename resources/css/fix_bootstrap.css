@@ -1,0 +1,50 @@
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css');
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.nav-pills .nav-link {
+    background-color: #E1E1E1;
+    color: black;
+}
+.nav-pills {
+    border-bottom: 2px solid #C3A36A;
+}
+.nav-pills .nav-link.active {
+    background-color: #C3A36A;
+    color: #fff; 
+    border-radius: 5px 5px 0 0;
+}
+
+dl, ol, ul {
+    margin-top: 0 !important;   /* Đặt lại margin trên */
+    margin-bottom: 0 !important; /* Đặt lại margin dưới */
+    padding-left: 0;            /* Đặt lại padding trái nếu cần */
+    list-style: none;           /* Xóa bullet points hoặc số */
+}
+
+p {
+    margin-top: initial !important;
+    margin-bottom: initial !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.7rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+
+h1 {
+    margin: 0;
+}
+
+.img-fluid {
+    max-width: auto;
+    height: auto;
+}

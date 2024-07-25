@@ -1,4 +1,5 @@
-- trong đây chứa toàn bộ video tag html có id là video
+**thêm video**
+
 - trình tự xắp xếp : 
 __1__   __2__   __3__
 __4__   __5__   __6__

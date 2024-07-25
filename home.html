@@ -6,335 +6,496 @@
     <title>Document</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="resources/css/fix_bootstrap.css">
+    <link rel="stylesheet" href="resources/css/base.css">
+    <link rel="stylesheet" href="resources/css/main.css">
     
 </head>
 <body>
 
     <main>
 
-        <div id="header">
-            <div class="logo">
-                <img src="https://adaptiverecognition.com/app/uploads/2020/05/25103103/adaptive_recognition_logo_fekvo.svg" alt="">
+        <div id="header" class="base-row  base-align-center">
+            <div class="logo col" style="height: var(--px-68);">
+                <img width="325" height="50" src="https://adaptiverecognition.com/app/uploads/2020/05/25103103/adaptive_recognition_logo_fekvo.svg" alt="">
             </div>
-            <div class="navbars col">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Material</a></li>
-                    <li>
-                        <a href="#"> <i style="color: #C3A36A;" class="fi fi-rr-globe"></i> English <i class="fi fi-rr-angle-small-down"></i></a>
-                        <ul>
-                            <li><a href="#">Vietnamese</a></li>
+            <div class="navbars base-row ">   
+                <ul style="    position: relative;
+                right: 0;
+                top: -8px;" class=" base-align-center base-row" >
+                    <li ><a class="fix-a active-border-bottom"  href="#">Home</a></li>
+                    <li ><a class="fix-a" href="#">News</a></li>
+                    <li ><a class="fix-a" href="#">Support</a></li>
+                    <li ><a class="fix-a" href="#">Material</a></li>
+                    <li class="base-relative">
+                        <a href="#" class="fix-a base-align-center hover-appear-aim"> 
+                            <i style=" top: 2px;position: relative; color: #C3A36A;" class="fi fi-rr-globe"></i> 
+                            English 
+                            <i style=" top: 4px;position: relative; color: #C3A36A;" class="fi fi-rr-angle-small-down"></i></a>
+                        <ul class=" language-selection base-absolute base-w-100pc base-left-0 base-bgcolor-white base-shadow-box-for-white base-border-radius hover-appear-toggle">
+                            <li><a href="#" >Vietnamese</a></li>
                             <li><a href="#">French</a></li>
                         </ul>
                         
                     </li>
-                    <li><a href="#">Contact us</a></li>
                     
                 </ul>
+                <a class="fix-a contact base-fs-18" href="#"><i class="fi fi-brands-instagram"></i> Contact Us</a>
             </div>
             
         </div>
 
-        <div id="direction">
-            <p>Home / Recognition Software / Carmen®Mobile</p>
-        </div>
+        <div style=" top: var(--px-76); position: relative;">
 
-        <div id="show-project">
-            <div class="content">
-                <h1 class="title">Carmen®Mobile</h1>
-                <h4 class="dicription">Android App for Number Plate and Make and Model Recognition</h4>
+            <div id="direction">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="fix-a" href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a class="fix-a" href="#">Recognition Software</a></li>
+                      <li style="color: var(--color-white); font-weight:600;" class="breadcrumb-item active" aria-current="page">Carmen®Mobile</li>
+                    </ol>
+                  </nav>
             </div>
-            <div class="illustration">
-                <img src="https://adaptiverecognition.com/app/uploads/2021/09/16123831/Carmen_Mobile_ANPR_app.png" alt="" width="">
-            </div>
-        </div>
-
-        <div id="highlight-featalls">
-            <h1>Highlighted Features</h1>
-            <div class="container">
-                <div class="item">
-                    <img src="images/graphic/find.jpg" alt="">
-                    <h4>FIND PARKING PLOT AND ROUTE</h4>
-                </div>
-                <div class="item">
-                    <img src="images/graphic/search.jpg" alt="">
-                    <h4>SEARCH YOUR PARKING ADDRESS WHEN HAVING PARKED AND ROUTE</h4>
-                </div>
-                <div class="item">
-                    <img src="images/graphic/your_car_info.jpg" alt="">
-                    <h4>YOUR VEHICLE INFORMATIONE</h4>
-                </div>
-                <div class="item">
-                    <img src="images/graphic/online_payment.jpg" alt="">
-                    <h4>ONLINE PAYMENT</h4>
-                </div>
-                <div class="item">
-                    <img src="images/graphic/booking.jpg" alt="">
-                    <h4>BOOKING </h4>
-                </div>
-                <div class="item">
-                    <img src="images/graphic/get_news.jpg" alt="">
-                    <h4>GET NEWS NOTIFICATION, EVENTS</h4>
+    
+            <div id="show-project" >
+                <div class="base-row">
+                    <div class="content w-50pc">
+                        <h1 class="title relative" >Carmen<edit>®</edit>Mobile</h1>
+                        <h4 class="dicription">Android App for Number Plate and Make and Model Recognition</h4>
+                    </div>
+                    <div class="illustration w-50pc">
+                        <div class="container" style="">
+                            <img width="500" height="362" src="https://adaptiverecognition.com/app/uploads/2021/09/16123831/Carmen_Mobile_ANPR_app.png" alt="" width="">
+    
+                        </div>
+                    </div>
+    
                 </div>
             </div>
-        </div>
+    
+            <div id="highlight-featalls">
+                <h1 class="base-border-left-h1">Highlighted Features</h1>
+                <div class="container">
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/find.jpg" alt="">
+                        <h4>FIND PARKING PLOT AND ROUTE</h4>
+                    </div>
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/search.jpg" alt="">
+                        <h4>SEARCH YOUR PARKING ADDRESS WHEN HAVING PARKED AND ROUTE</h4>
+                    </div>
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/your_car_info.jpg" alt="">
+                        <h4>YOUR VEHICLE INFORMATIONE</h4>
+                    </div>
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/online_payment.jpg" alt="">
+                        <h4>ONLINE PAYMENT</h4>
+                    </div>
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/booking.jpg" alt="">
+                        <h4>BOOKING </h4>
+                    </div>
+                    <div class="item">
+                        <img class="base-border-radius" width="420" height="236" src="assets/images/id_highlightFeatalls/graphic/get_news.jpg" alt="">
+                        <h4>GET NEWS NOTIFICATION, EVENTS</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="videos">
+                <h1 class="base-border-left-h1">Videos</h1>
+                <nav>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introduction</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button  class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">First Use</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Preset Modes</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-handheld-tab" data-bs-toggle="pill" data-bs-target="#pills-handheld" type="button" role="tab" aria-controls="pills-handheld" aria-selected="false">Handheld Mode</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-parking-tab" data-bs-toggle="pill" data-bs-target="#pills-parking" type="button" role="tab" aria-controls="pills-parking" aria-selected="false">Parking Mode</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-expired-tab" data-bs-toggle="pill" data-bs-target="#pills-expired" type="button" role="tab" aria-controls="pills-expired" aria-selected="false">Expired Parking</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content " id="pills-tabContent">
+                        <div class="tab-pane fade show active base-row" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">Introduction</h2>
+                                <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
+                            </div>
+                            <div class="container w-50pc">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="video-thumbnail">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                      <div class="play-button"></div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                                <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel1">Introduction</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer1" controls>
+                                          <source src="assets/videos/id_video/demo_hihi.mp4" type="video/mp4">
+                                          <!-- <source src="assets/videos/id_video/video1.mp4" type="video/mp4"> -->
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                          
+                          
+                        </div>
+                        <div style="display: none;" class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">First Use</h2>
+                                <p>Learn how to use Carmen® Mobile for the first time. See where to download the app, how to register to ANPR Cloud, and log into the app’s user interface.</p>
+                            </div>
+                            <div class="container w-50pc">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel2">First Use</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer2" controls>
+                                          <source src="assets/videos/id_video/video2.mp4" type="video/mp4">
+    
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div style="display: none;" class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">Preset Modes</h2>
+                                <p>A short presentation of the preset modes of Carmen® Mobile. Learn how they can help you create the best on-the-go ANPR experience for your project.</p>
+                            </div>
+                            <div class="container w-50pc">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel3">Preset Modes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer3" controls>
+                                            <source src="assets/videos/id_video/video3.mp4" type="video/mp4">
+    
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div  style="display: none;" class="tab-pane fade" id="pills-handheld" role="tabpanel" aria-labelledby="pills-handheld-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">Handheld Mode</h2>
+                                <p>See how Carmen® Mobile performs in handheld mode with automatic and manual triggers.</p>
+                            </div>
+                            <div class="container w-50pc">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal4">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel4">Handheld Mode</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer4" controls>
+                                            <source src="assets/videos/id_video/video4.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div style="display: none;"  class="tab-pane fade" id="pills-parking" role="tabpanel" aria-labelledby="pills-parking-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">Parking Mode</h2>
+                                <p>Watch Carmen® Mobile perform license plate recognition on parked cars on both sides of a road.</p>
+                            </div>
+                            <div class="container w-50pc">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="modal fade" id="videoModal5" tabindex="-1" aria-labelledby="videoModalLabel5" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel5">Parking Mode</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer5" controls>
+                                            <source src="assets/videos/id_video/video5.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div  style="display: none;"  class="tab-pane fade" id="pills-expired" role="tabpanel" aria-labelledby="pills-expired-tab">
+                            <div class="description w-50pc">
+                                <h2 class="title">Expired Parking</h2>
+                                <p>This function allows users to sift out vehicles overstaying a certain period of time in a private parking lot (e.g. at shopping malls) which some drivers tend to use as free public parking space.</p>
+                            </div>
+                            <div class="container w-50pc">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal6">
+                                      <img width="620" height="349" src="assets/images/id_video/thumbnail.jpg" alt="Thumbnail video" class="">
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="modal fade" id="videoModal6" tabindex="-1" aria-labelledby="videoModalLabel6" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel6">Expired Parking</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <video style="width: 100%;" id="videoPlayer6" controls>
+                                            <source src="assets/videos/id_video/video6.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </nav>
+                
+            </div>
+    
+            <div id="FAQ">
+                <h1 class="base-border-left-h1">Frequently Asked Questions</h1>
+                <div class="scroll">
+    
+                    <div class="container-card base-row ">
+                 
+                        <div class="base-card base-col base-relative">
+                            <div class="question base-col base-align-center base-relative">
+                                <b class="title">Can I forward ANPR data to an external server?</b>
+                                <a class="base-absolute base-bottom-0 open-js" href=""><i class="fi fi-rr-add"></i></a>
+                            </div>
+        
+                            <div class="card-toggle none  base-border-radius  ">
+                                <i class="fi fi-br-cross close-js"></i>
+                                <b class="question">Can I forward ANPR data to an external server?</b>
+                                <p>Yes, through FTP and HTTP REST protocol. You can also forward data to GDS, Adaptive Recognition’s data server.</p>
+                            </div>
+                        </div>
+                        <div class="base-card base-relative">
+                            <div class="question base-col base-align-center base-relative">
+                                <b class="title"> Can I use Carmen® Mobile on any mobile device running Android?</b>
+                                <a class="base-absolute base-bottom-0 open-js" href=""><i class="fi fi-rr-add"></i></a>
+        
+                            </div>
+        
+                            <div class="card-toggle none base-border-radius">
+                                <i class="fi fi-br-cross close-js"></i>
+                                <b class="question"> Can I use Carmen® Mobile on any mobile device running Android?</b>
+                                <p>Minimal requirements for the device include: <br>
+                                    – OS: Android 10 or newer <br>
+                                    – Memory: 4 GB RAM <br>
+                                    – CPU: Octa <br>
+                                    – Minimum DXOMARK score for the phone’s camera: 100</p>
+                            </div>
+                        </div>
+                        <div class="base-card base-relative">
+                            <div class="question base-col base-align-center base-relative">
+        
+                                <b class="title">How big are data packages?</b>
+                                <a class="base-absolute base-bottom-0 open-js" href=""><i class="fi fi-rr-add"></i></a>
+                            </div>
+        
+                            <div class="card-toggle none base-border-radius">
+                                <i class="fi fi-br-cross close-js"></i>
+                                <b class="question">How big are data packages?</b>
+                                <p> – MPG4: 1.5 to 2 MB <br>
+                                    – Picture of vehicle: ca. 200 KB/event + extra media (JPEG) <br>
+                                    – Overview image: FHD, 800 KB to 1 MB (JPEG)</p>
+                            </div>
+                        </div>
+                        <div class="base-card base-relative">
+                            <div class="question base-col base-align-center base-relative">
+                                <b class="title">What happens with offline events?</b>
+                                <a class="base-absolute base-bottom-0 open-js" href=""><i class="fi fi-rr-add"></i></a>
+        
+                            </div>
+        
+                            <div class="card-toggle none base-border-radius">
+                                <i class="fi fi-br-cross close-js"></i>
+                                <b class="question">What happens with offline events??</b>
+                                <p>When the phone is offline, Carmen® Mobile continues to record images but doesn’t add ANPR data to them. Once the phone is connected to Wi-Fi again, photos captured offline are completed with ANPR data, and they subsequently appear in the list of events.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div id="contact" class="base-relative">
+                <div class="container base-row">
+                    <div class="form-container">
+                        <h1 class="base-border-left-h1">Contact</h1>
+                        <form class="form-contact base-relative" action="" method="post">
+                            <div class="base-row cal">
+                                <div class="w-50pc">
+                                    <label for="first-name">First name <start>*</start></label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="w-50pc">
+                                    <label for="last-name">Last name <start>*</start></label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                          
+                            <div class="base-row cal">
+                                <div class="w-50pc">
+                                    <label for="email">Email <start>*</start></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="w-50pc">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" >
+                                </div>
+                            </div>
+                            <div class="base-w-100pc cal">
+                                <label for="message">Message <start>*</start></label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="base-row ">
+                                <div class="check w-50pc">
+                                    <input class="checkbox" type="checkbox" id="agree" name="agree" required>
+                                    <label for="agree">Agree to receive the Carmen®Mobile's news and post</label>
+                                </div>
+                                <div style="width: 50%;">
+                                    <button type="submit">Submit</button>
+                                </div>
 
-        <div id="videos">
-            <h1>Videos</h1>
-            <nav>
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introduction</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">First Use</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Preset Modes</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-handheld-tab" data-bs-toggle="pill" data-bs-target="#pills-handheld" type="button" role="tab" aria-controls="pills-handheld" aria-selected="false">Handheld Mode</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-parking-tab" data-bs-toggle="pill" data-bs-target="#pills-parking" type="button" role="tab" aria-controls="pills-parking" aria-selected="false">Parking Mode</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-expired-tab" data-bs-toggle="pill" data-bs-target="#pills-expired" type="button" role="tab" aria-controls="pills-expired" aria-selected="false">Expired Parking</button>
-                    </li>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="banner base-border-radius base-relative">
+                        <div class="container">
+                            <h2>GET MORE INFORMATION OR A QUOTE</h2>
+                            <p>Our sales & product experts are here to help you. Contact us or find an affiliate near your location.</p>
+                            <img width="366" height="206" src="https://adaptiverecognition.com/app/uploads/sites/39/2020/03/06131043/map2-1.png" alt="">
+                            
+                        </div>
+                        <div style="padding: 20px;position: relative; text-align: center;">
+
+                            <a href="#">View our representatives on a map  <i class="fi fi-rr-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div id="navbar">
+                <ul class="base-row base-align-center">
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About us</a></li>
+                    <!-- <a href="#header"><i class="fi fi-br-arrow-alt-to-top"></i></a> -->
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="description">
-                            <div class="title">Introduction</div>
-                            <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel1">Tiêu đề video</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer1" controls>
-                                      <source src="assets/videos/id_video/demo_hihi.mp4" type="video/mp4">
-                                      <!-- <source src="assets/videos/id_video/video1.mp4" type="video/mp4"> -->
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          
-                      
-                      
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="description">
-                            <div class="title">First Use</div>
-                            <p>Learn how to use Carmen® Mobile for the first time. See where to download the app, how to register to ANPR Cloud, and log into the app’s user interface.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal2">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel2">First Use</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer2" controls>
-                                      <source src="assets/videos/.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="description">
-                            <div class="title">Introduction</div>
-                            <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal3">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel3">Tiêu đề video</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer3" controls>
-                                      <source src="assets/videos/demo_hihi.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>>
-                    </div>
-                    <div class="tab-pane fade" id="pills-handheld" role="tabpanel" aria-labelledby="pills-handheld-tab">
-                        <div class="description">
-                            <div class="title">Introduction</div>
-                            <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal4">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel4">Tiêu đề video</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer4" controls>
-                                      <source src="assets/videos/demo_hihi.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>>
-                    </div>
-                    <div class="tab-pane fade" id="pills-parking" role="tabpanel" aria-labelledby="pills-parking-tab">
-                        <div class="description">
-                            <div class="title">Introduction</div>
-                            <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal5">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal5" tabindex="-1" aria-labelledby="videoModalLabel5" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel5">Tiêu đề video</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer5" controls>
-                                      <source src="assets/videos/demo_hihi.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>>
-                    </div>
-                    <div class="tab-pane fade" id="pills-expired" role="tabpanel" aria-labelledby="pills-expired-tab">
-                        <div class="description">
-                            <div class="title">Introduction</div>
-                            <p>Discover the features of Carmen® Mobile and see how you can tailor on-the-go ANPR according to your needs.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal6">
-                                  <img src="thumbnail.jpg" alt="Thumbnail video" class="img-fluid">
-                                </a>
-                              </div>
-                            </div>
-                          
-                            <div class="modal fade" id="videoModal6" tabindex="-1" aria-labelledby="videoModalLabel6" aria-hidden="true">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel6">Tiêu đề video</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <video style="width: 100%;" id="videoPlayer6" controls>
-                                      <source src="assets/videos/demo_hihi.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>>
-                    </div>
+            </div>
+    
+            <div id="footer" class="base-row">
+                <div class="copyright">
+                    &copy; Copyright 1991-2024 Adaptive Recognition Inc. All rights reserved.
                 </div>
-            </nav>
-            
-        </div>
-
-        <div id="FAQ">
-
-        </div>
-
-        <div id="contact">
-
-        </div>
-
-        <div id="navbar">
-
-        </div>
-
-        <div id="footer">
-
+                <div class="logo">
+                    <img width="203" height="33" src="https://adaptiverecognition.com/app/uploads/2020/05/25103103/adaptive_recognition_logo_fekvo.svg" alt="">
+                </div>
+                <div class="socials">
+                    <a href=""><i class="fi fi-brands-instagram"></i></a>
+                    <a href=""><i class="fi fi-brands-youtube"></i></a>
+    
+                </div>     
+            </div>
         </div>
 
     </main>
@@ -344,6 +505,9 @@
 
 
 
-    <script src="js/id_Video_handlePauseVideo.js"></script>
+    <script src="resources/js/id_Videos_fix_bootstrap.js"></script>
+    <script src="resources/js/id_Videos_handlePauseVideo.js"></script>
+    <script src="resources/js/id_FAQ_OpenAndCloseCard.js"></script>
+    <script src="resources/js/id_Contact_lable'sMovement.js"></script>
 </body>
 </html>

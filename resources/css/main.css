@@ -1,0 +1,470 @@
+
+@import "./base.css";
+
+
+
+i {
+    margin: 0 5px 0 3px;
+}
+
+
+/* ____________________ HEADER _________________________ */
+#header {
+    padding: 0 var(--px-70) 0 var(--px-70);
+    height: var(--header-height);
+    box-shadow: 0px 1px 20px 0px #9090905c;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 999;
+}
+#header .navbars {
+    display: flex;
+    justify-content: center;
+}
+#header .navbars ul {
+    right: 76px;
+    font-weight: 700;
+}
+#header .navbars ul li {
+    padding: 10px 15px 10px 15px;
+    list-style: none;
+}
+#header .navbars > ul > li > a {
+    color: var(--color-black);
+    padding: 25px 10px 23.2px 10px;
+}
+#header .navbars > ul > li > a:hover {
+    border-bottom: 4px solid var(--color-yellow-banana);
+}
+.active-border-bottom {
+    border-bottom: 4px solid var(--color-yellow-banana);
+}
+
+#header .navbars .contact  {
+    color: var(--color-white);
+    padding: 0  29px;
+    background-color: var(--color-yellow-banana);
+    position: relative;
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 95px;
+    font-weight: 700;
+}
+#header .language-selection {
+    top: 56px;
+    background-color: var(--color-white-);
+    transition: all .2s ease-in-out;
+}
+#header .language-selection a {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: normal;
+}
+#header .language-selection a:hover {
+    color: var(--color-yellow-banana);
+}
+
+
+
+/* __________________ DIRECTION _______________________ */
+
+#direction {
+    padding: 10px 0 10px 0;
+    background-color: #363636;
+    color: var(--color-white);
+    font-size: var(--fs-14);
+    position: relative;
+   
+}
+#direction nav {
+    padding: 0 var(--px-70) 0 var(--px-70);
+    line-height: 30px   ;
+}
+#direction nav li a {
+    color: var(--color-gray);
+}
+#direction nav li a:hover {
+    color: var(--color-yellow-banana);
+}
+/* ___________________ SHOW PROJECT _______________________ */
+
+#show-project {
+    padding: 94px var(--px-70) var(--px-70) var(--px-70);
+    background-color: black;
+    color: var(--color-white);
+}
+#show-project > div {
+    padding: 0 40px 0 40px ;
+    align-items: center;
+}
+#show-project .title {
+    font-weight: 600;
+    margin-bottom: 15px !important;
+}
+#show-project .description {
+    margin-bottom: 15px !important;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#show-project edit {
+    position: relative;
+    top: -22px;
+    font-size: var(--px-42);
+}
+#show-project .content .title {
+    font-size: var(--px-56);
+    font-family: sans-serif, Roboto;
+}
+#show-project img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-left: auto;
+    float: right;
+    margin-right: -10px;
+}
+/* _____________________HIGHLIGHT FEATALLS_______________________ */
+
+#highlight-featalls {
+    padding: var(--px-140) var(--px-70) 0 var(--px-70) ;
+    background-color: var(--color-white-pink);
+}
+
+#highlight-featalls .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Để các cột được căn giữa */
+    margin-top: var(--px-56);
+}
+#highlight-featalls .container .item {
+    width: calc(33.33% - 10px); /* Để tránh overflow, padding ở hai bên  */
+    margin-bottom: 20px; /* Để tạo ra khoảng trống dưới cùng แ เพื่อความสะดวก*/
+    text-align: center;
+}
+#highlight-featalls .container .item h4 {
+    margin-top: 30px;
+}
+/* ______________________  VIDEOS  ________________________ */
+
+#videos {
+    padding: var(--px-70) var(--px-70) 0 var(--px-70) ;
+}
+#videos nav {
+    padding: var(--px-56) 0;
+}
+#videos nav ul {
+    justify-content: center;
+}
+#videos nav li button {
+    margin: 0 5px;
+}
+#videos .tab-content > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#videos .tab-pane .container .row {
+    float: right;
+
+}
+#videos .tab-pane .container .row img {
+    margin-right: -11px;
+    border-radius: 7px;
+}
+/* _____________________ FAQ _______________________ */
+
+#FAQ {
+    padding: var(--px-70) var(--px-70) 0 var(--px-70) ;
+}
+#FAQ .scroll {
+    scrollbar-color:  transparent;
+    overflow-x: scroll;
+    height: 291px;
+}
+#FAQ .scroll::-webkit-scrollbar {
+    display: none;
+}
+#FAQ .container-card {
+    margin-top: 30px;
+    width: max-content;
+    gap: 1rem;
+}
+
+#FAQ .base-card > .question {
+    box-shadow: 0px 0px 8px 1px #ececec;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 7px;
+    height: 150px;
+    
+    word-wrap: break-word;
+}
+#FAQ .base-card > .question a {
+    position: absolute;
+    bottom: 0;
+    margin: 20px 10px 10px 10px;
+    font-size: var(--fs-30);
+    color: var(--color-yellow-banana);
+    cursor: pointer;
+    text-decoration: none;
+}
+#FAQ .container-card .card-toggle {
+    position: absolute;
+    z-index: 1;
+    background-color: #363636;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+    width: 203%;
+    animation: slip-down .3s ease ;
+}
+#FAQ .container-card .card-toggle p {
+    animation: appear .7s ease-in-out;
+}
+#FAQ .container-card .base-card:last-child .card-toggle {
+    position: absolute;
+    z-index: 1;
+    background-color: #363636;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    top: 0;
+    left: -105%;
+    transform-origin: top;
+    width: 203%;
+    animation: slip-down .3s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slip-down {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+#FAQ .container-card .card-toggle i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: var(--color-yellow-banana);
+    cursor: pointer;
+}
+#FAQ .container-card .card-toggle p {
+    font-size: var(--fs-14);
+    margin-top: 30px !important
+}
+.base-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.base-card {
+    flex: 1 1 300px; /* Adjust the width as per your requirement */
+}
+/* _______________________ CONTACT  _______________________ */
+#contact {
+    margin: 0 var(--px-70);
+}
+
+#contact > .container {
+    padding: 0;
+    margin: 0;
+}
+
+#contact .form-contact {
+    margin: 30px 0 0 0;
+
+}
+#contact .container .form-container {
+    width: 66%;
+}
+#contact .container .form-container textarea {
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    width: 97.4%;
+    margin: 0 10px 25px 0;
+    resize: none;
+    height: var(--px-140)!important;
+}
+#contact .container .form-container .cal input {
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    width: 95%;
+    margin: 0 10px 25px 0;
+}
+#contact .container .form-container > h1 {
+    font-size: var(--px-42);
+}
+
+#contact .container .form-container start {
+    color: red;
+}
+#contact .container .form-container textarea:focus-visible,
+#contact .container .form-container input:focus-visible {
+    outline: none;
+}
+#contact .container .form-container .cal label {
+    font-size: var(--fs-14);
+    position: relative;
+    top: 37px;
+    margin-left: 17px;
+    color: #999;
+    transition: top .3s ease-in-out, font-size .3s ease-in-out, color .3s ease-in-out, margin-left .4s ease-in-out;
+}
+#contact .container .form-container .check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contact .container .form-container .check input {
+    width: 20px;
+    display: inline;
+    transform: scale(1.5);
+    accent-color: #C3A36A;
+    border: 1px solid #C3A36A;
+    margin-right: 7px;
+}
+
+#contact .container .form-container button[type="submit"] {
+    float: right;
+    background-color: var(--color-yellow-banana);
+    color: var(--color-white);
+    padding: 12px var(--px-70);
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    margin-right: 23px;
+}
+#contact .container .form-container button[type="submit"]:hover {
+    opacity: .8;
+}
+
+
+#contact .container .banner {
+    width: 33%;
+    padding: 20px 25px 20px 20px;
+    background-color: #363636;
+    color: var(--color-white);
+    position: relative;
+    right: -73px;
+}
+#contact .container .banner img {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #C3A36A;
+}
+#contact .container .banner a {
+    text-decoration: none;
+    color: #C3A36A;
+    margin: 30px 0;
+}
+#contact .container .banner a i {
+    position: absolute;
+    transition: margin-left .3s ease-in-out;
+    top: 37%;
+    padding-left: 5px;
+    
+}
+#contact .container .banner a:hover i {
+    margin-left: 10px;
+
+}
+
+
+/* ______________________ NAVFOOTER________________________________ */
+
+#navbar {
+    padding: 10px 0 10px 0;
+    background-color: #363636;
+    color: var(--color-yellow-banana);  
+    margin-top: var(--px-70);
+    font-size: var(--px-16);
+}
+
+#navbar .base-row {
+    display: flex;
+    justify-content: center; 
+}
+
+#navbar .base-row li {
+    flex: 1;
+    text-align: center;
+}
+#navbar .base-row li a {
+    color: var(--color-yellow-banana);
+}
+#navbar .base-row > a {
+    position: absolute;
+    color: var(--color-yellow-banana);
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 1px solid var(--color-yellow-banana);
+    margin: 5px 10px;
+}
+
+/* __________________________ FOOTER  ___________________ */
+
+#footer {
+    background-color: var(--color-black);
+    padding: 20px var(--px-70) ;
+    
+    border-top: 1px solid var(--color-yellow-banana);
+    color: var(--color-gray);
+}
+#footer .copyright {
+    justify-content: center;
+    flex: 1;
+} 
+#footer .logo {
+    flex: 1;
+    text-align: center;
+}
+#footer .socials {
+    flex: 1;
+}
+#footer .socials a {
+    float: right;
+    color: var(--color-yellow-banana);
+    text-decoration: none;
+    font-size: var(--px-16);
+    padding: 5px 0 5px 5px;
+    margin-left: 5px;
+}
+/* ___________________________________________________________________ */
+.hover-appear-toggle {
+    visibility: hidden;
+    opacity: 0;
+}
+.hover-appear-toggle:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.hover-appear-aim:hover + .hover-appear-toggle {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ____________________________________ */
