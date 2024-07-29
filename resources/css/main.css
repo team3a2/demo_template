@@ -608,4 +608,12 @@ button:hover {
 .input-label input[type="file"] {
     display: none; /* Ẩn thẻ input gốc */
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+#videos .video-thumbnail img {
+    max-width:max-content;
+    
+}
 /* ____________________________________ */
