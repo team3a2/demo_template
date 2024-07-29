@@ -147,7 +147,7 @@
         margin: 15px 0;
     }
     #contact .form-container .base-row:last-child div:last-child {
-        width: 100%;
+        width: 100% !important;
     }
     #contact form > div {
         flex-direction: column;
