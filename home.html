@@ -16,6 +16,145 @@
 <body>
 
     <main>
+        <div class="blackscreen none"></div>
+        <div id="container-login-register" class="base-relative  none">
+            <div class="header">
+                <h2 class="tt-main">LOGIN</h2><h2 class="tt-df">INFORMATION</h2>
+            </div>
+            <div class="close"><i class="fi fi-br-cross"></i></div>
+            <div class="container-login form-handle">
+                
+                <div class="base-pd-tb-20 login_  " style="margin-top: 30px;">
+                    <div class="base-col">
+
+                        <form action="">
+    
+                            <div class="input-label">
+                              <input type="text" placeholder=" " id="login-email-phone" name="email-phone" required>
+                              <label for="login-email-phone">Email/Phone<start> *</start></label>
+                            </div>
+                            <div class="input-label">
+                              <input placeholder=" " type="text" id="login-password" name="password" required>
+                                <label for="login-password">Password<start> *</start></label>
+                            </div>
+        
+                            <a href="" class="fix-a">Forgot the password?</a>
+                            <button type="submit">Login</button>
+                        </form>
+                        <div class="direct">
+                            <a href="" class="direct-to-register">You don't have an account yet? Register now </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div  class="base-pd-tb-20 register_ none" style="margin-top: 30px;">
+                    <div class="base-col">
+
+                        <form action="" >
+                          <div class="base-row_ ">
+
+                              <div class="w-50pc">
+                                <div class="name base-row">
+                                    <div class="input-label base-flex-1" >   
+                                        <input placeholder=" " type="text" id="register -firstname" name="firstname" required>
+                                        <label for="register-firstname">First name<start> *</start></label>
+                                    </div>
+                                    <div class="input-label base-flex-1">
+                                      <input type="text" placeholder=" " id="register-middlename" name="middlename" required>
+                                        <label for="register-middlename">Middle name<start> *</start></label>
+                                    </div>
+                                    <div class="input-label base-flex-1">
+                                      <input type="text" placeholder=" " id="register-lastname" name="lastname" required>
+                                      <label for="register-lastname">Last name<start> *</start></label>
+                                    </div>
+                                </div>
+                                <div class="base-row">
+                                    <div class="input-label base-flex-1">   
+                                        <input type="email" id="register-email" placeholder=" " name="email" required>
+                                        <label for="register-email">email<start> *</start></label>
+                                    </div>
+                                    <div class="input-label base-flex-1">   
+                                      <input type="date" placeholder=" " id="register-day-of-birth" name="dayofbirth" required>
+                                        <label for="register-day-of-birth">Day of birth<start> *</start></label>
+                                    </div>
+                                </div>
+                                <div class="base-row">
+                                  <div class="input-label base-flex-1">   
+                                      <input type="text" id="register-pro" placeholder=" " name="pro" required>
+                                      <label for="register-pro">Professional<start> *</start></label>
+                                  </div>
+                                  <div class="input-label base-flex-1">   
+                                    <input type="text" placeholder=" " id="register-phone" name="phone" required>
+                                      <label for="register-phone">Phone<start> *</start></label>
+                                  </div>
+                                </div>
+                                <div class="base-row">
+                                  <div class="input-label base-flex-1">   
+                                    <input type="text" placeholder=" " id="register-address" name="address" required>
+                                      <label for="register-address">Address<start> *</start></label>
+                                  </div>
+                                </div>
+                            </div>
+                              
+                            <div class="w-50pc">
+                              <div class="base-row">
+                                <div class="input-label base-flex-1-2">     
+                                    <input type="file" placeholder=" " accept=".pdf, .png, .jpg, .jpeg" id="register-vrl" name="vrl_img" required>
+                                    <input type="text" id="vrl-temp" placeholder=" " readonly>
+                                    <label for="vrl-temp" id="label-upload-vrl"><i style="color: var(--color-yellow-banana);" class="fi fi-rr-upload"></i> Upload the vehicle register license<start> *</start> </label>
+                                </div>
+                                <div class="input-label base-flex-1">   
+                                    <input type="file" placeholder=" " accept=".pdf, .png, .jpg, .jpeg" id="register-license" name="license_img" required>
+                                    <input type="text" id="license-temp" placeholder=" " readonly>
+                                    <label for="license-temp" id="label-upload-license"><i style="color: var(--color-yellow-banana);" class="fi fi-rr-upload"></i> Upload the license<start> *</start> </label>
+                                </div>
+                              </div>
+                              <div class="base-row">
+                                <div class="input-label base-flex-1">   
+                                  <input type="text" placeholder=" " id="register-license-name" name="license-name" required>
+                                  <label for="register-license-name" >Name on the license<start> *</start> </label>
+                                </div>
+                              </div>
+                              <div class="base-row">
+                                <div class="input-label base-flex-1">   
+                                  <input type="date" placeholder=" " id="register-date-of-issue-license" name="license_date_of_issue" required>
+                                  <label for="register-date-of-issue-license" >Date of issue of the license<start> *</start> </label>
+                                </div>
+                                <div class="input-label base-flex-1">   
+                                  <input list="browsers" style="padding-right: 0;" placeholder=" " id="register-browsers" name="vehicle_type" required>
+                                  <label for="register-browsers" >Vehicle type<start> *</start> </label>
+                                  <datalist id="browsers">
+                                    <option value="Car"></option>
+                                    <option value="Motobike"></option>
+                                  </datalist>
+                                </div>
+                              </div>
+                              <div class="base-row">
+                                <div class="input-label base-flex-1">   
+                                  <input type="color" placeholder=" " id="register-color" name="color" required>
+                                  <label for="register-color" >Color<start> *</start> </label>
+                                </div>
+                                <div class="input-label base-flex-1">   
+                                  <input type="type"  placeholder=" " id="register-plate-number" name="plate_number" required>
+                                  <label for="register-plate-number" >Plate number<start> *</start> </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit">Register</button>
+                        </form>
+                        <div class="direct">
+                            <a href="" class="direct-to-login">You have account yet? Login now </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="container-register">
+
+            </div>
+        </div>
 
         <div id="header" class="base-row  base-align-center">
             <div class="logo col" style="height: var(--px-68);">
@@ -42,7 +181,8 @@
                     </li>
                     
                 </ul>
-                <a class="fix-a contact base-fs-18" href="#"><i class="fi fi-brands-instagram"></i> Contact Us</a>
+                <a class="fix-a contact accout-js base-fs-18" href="#"><i class="fi fi-rr-user"></i> Account</a>
+                
             </div>
             
         </div>
@@ -415,35 +555,35 @@
                 </div>
             </div>
     
-            <div id="contact" class="base-relative">
-                <div class="container base-row">
+            <div id="contact" class="base-relative base-row">
+                <!-- <div class="container base-row"> -->
                     <div class="form-container">
                         <h1 class="base-border-left-h1">Contact</h1>
-                        <form class="form-contact base-relative" action="" method="post">
-                            <div class="base-row cal">
-                                <div class="w-50pc">
-                                    <label for="first-name">First name <start>*</start></label>
-                                    <input type="text" id="first-name" name="first-name" required>
+                        <form class=" base-relative" action="" method="post">
+                            <div class="base-row ">
+                                <div class="w-50pc input-label base-row">
+                                  <input type="text" id="first-name" name="first-name" placeholder=" " required>
+                                  <label for="first-name">First name <start>*</start></label>
                                 </div>
-                                <div class="w-50pc">
-                                    <label for="last-name">Last name <start>*</start></label>
-                                    <input type="text" id="last-name" name="last-name" required>
+                                <div class="w-50pc input-label base-row">
+                                  <input type="text" id="last-name" name="last-name" placeholder=" " required>
+                                  <label for="last-name">Last name <start>*</start></label>
                                 </div>
                             </div>
                           
-                            <div class="base-row cal">
-                                <div class="w-50pc">
-                                    <label for="email">Email <start>*</start></label>
-                                    <input type="email" id="email" name="email" required>
+                            <div class="base-row  ">
+                                <div class="w-50pc input-label base-row">
+                                  <input type="email" placeholder=" " id="email" name="email" required>
+                                  <label for="email">Email <start>*</start></label>
                                 </div>
-                                <div class="w-50pc">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" >
+                                <div class="w-50pc input-label base-row">
+                                  <input type="tel" id="phone"placeholder=" " name="phone" >
+                                  <label for="phone">Phone</label>
                                 </div>
                             </div>
-                            <div class="base-w-100pc cal">
+                            <div class="base-w-100pc input-label base-row">
+                                <textarea id="message" name="message"  placeholder=" " required></textarea>
                                 <label for="message">Message <start>*</start></label>
-                                <textarea id="message" name="message" required></textarea>
                             </div>
                             <div class="base-row ">
                                 <div class="check w-50pc">
@@ -470,7 +610,7 @@
                         </div>
                     </div>
                     
-                </div>
+                <!-- </div> -->
             </div>
     
             <div id="navbar">
@@ -503,11 +643,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script>
+        document.getElementById('label-upload-vrl').addEventListener('click', function() {
+            document.getElementById('register-vrl').click();
+        });
 
+        document.getElementById('register-vrl').addEventListener('change', function(event) {
+            const fileInput = event.target;
+            const fileName = fileInput.files[0].name;
+            document.getElementById('vrl-temp').value = fileName;
+        });
 
+        document.getElementById('label-upload-license').addEventListener('click', function() {
+            document.getElementById('register-license').click();
+        });
+
+        document.getElementById('register-license').addEventListener('change', function(event) {
+            const fileInput = event.target;
+            const fileName = fileInput.files[0].name;
+            document.getElementById('license-temp').value = fileName;
+        });
+    </script>
+
+    <script src="resources/js/id_Container_login_register.js"></script>
     <script src="resources/js/id_Videos_fix_bootstrap.js"></script>
     <script src="resources/js/id_Videos_handlePauseVideo.js"></script>
-    <script src="resources/js/id_FAQ_OpenAndCloseCard.js"></script>
-    <script src="resources/js/id_Contact_lable'sMovement.js"></script>
+    <script src=""></script>
 </body>
 </html>

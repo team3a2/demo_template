@@ -16,7 +16,7 @@ i {
     position: fixed;
     width: 100%;
     background-color: var(--color-white);
-    z-index: 999;
+    z-index: 2;
 }
 #header .navbars {
     display: flex;
@@ -31,7 +31,7 @@ i {
     list-style: none;
 }
 #header .navbars > ul > li > a {
-    color: var(--color-black);
+    color: var(--color-black-);
     padding: 25px 10px 23.2px 10px;
 }
 #header .navbars > ul > li > a:hover {
@@ -291,10 +291,10 @@ i {
     margin: 30px 0 0 0;
 
 }
-#contact .container .form-container {
+#contact  .form-container {
     width: 66%;
 }
-#contact .container .form-container textarea {
+#contact  .form-container textarea {
     background-color: #F3F3F3;
     padding: 15px;
     border-radius: 7px;
@@ -304,39 +304,37 @@ i {
     resize: none;
     height: var(--px-140)!important;
 }
-#contact .container .form-container .cal input {
+/* #contact  .form-container .cal input {
     background-color: #F3F3F3;
     padding: 15px;
     border-radius: 7px;
     border: none;
     width: 95%;
     margin: 0 10px 25px 0;
-}
-#contact .container .form-container > h1 {
+} */
+#contact  .form-container > h1 {
     font-size: var(--px-42);
+    margin-bottom: 40px;
 }
 
-#contact .container .form-container start {
+start {
     color: red;
 }
-#contact .container .form-container textarea:focus-visible,
-#contact .container .form-container input:focus-visible {
-    outline: none;
-}
-#contact .container .form-container .cal label {
+
+/* .form-handle .cal label {
     font-size: var(--fs-14);
     position: relative;
     top: 37px;
     margin-left: 17px;
     color: #999;
     transition: top .3s ease-in-out, font-size .3s ease-in-out, color .3s ease-in-out, margin-left .4s ease-in-out;
-}
-#contact .container .form-container .check {
+} */
+#contact  .form-container .check {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#contact .container .form-container .check input {
+#contact  .form-container .check input {
     width: 20px;
     display: inline;
     transform: scale(1.5);
@@ -344,8 +342,46 @@ i {
     border: 1px solid #C3A36A;
     margin-right: 7px;
 }
+.input-label {
+    position: relative;
+    display: flex;
+}
 
-#contact .container .form-container button[type="submit"] {
+.input-label label {
+    font-size: var(--fs-14);
+    position: absolute;
+    top: 16px;
+    margin-left: 17px;
+    color: #999;
+    transition: top .3s ease-in-out, font-size .3s ease-in-out, color .3s ease-in-out, margin-left .4s ease-in-out;
+}
+.input-label input {
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    width: 95%;
+    margin: 0 10px 25px 0;
+}
+.input-label input:focus-visible,
+.input-label textarea:focus-visible  {
+    outline: none;
+}
+.input-label input:not(:placeholder-shown) + label,
+.input-label input:focus + label {
+    top: -19px;
+    margin-left: 0;
+    font-size: 12px;
+    color: var(--color-black);
+}
+.input-label textarea:not(:placeholder-shown) + label,
+.input-label textarea:focus + label {
+    top: -19px;
+    margin-left: 0;
+    font-size: 12px;
+    color: var(--color-black)
+}
+#contact  .form-container button[type="submit"] {
     float: right;
     background-color: var(--color-yellow-banana);
     color: var(--color-white);
@@ -355,37 +391,37 @@ i {
     font-weight: 700;
     margin-right: 23px;
 }
-#contact .container .form-container button[type="submit"]:hover {
+#contact  .form-container button[type="submit"]:hover {
     opacity: .8;
 }
 
 
-#contact .container .banner {
+#contact  .banner {
     width: 33%;
     padding: 20px 25px 20px 20px;
     background-color: #363636;
     color: var(--color-white);
     position: relative;
-    right: -73px;
+    right: -14px;
 }
-#contact .container .banner img {
+#contact  .banner img {
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #C3A36A;
 }
-#contact .container .banner a {
+#contact  .banner a {
     text-decoration: none;
     color: #C3A36A;
     margin: 30px 0;
 }
-#contact .container .banner a i {
+#contact  .banner a i {
     position: absolute;
     transition: margin-left .3s ease-in-out;
     top: 37%;
     padding-left: 5px;
     
 }
-#contact .container .banner a:hover i {
+#contact  .banner a:hover i {
     margin-left: 10px;
 
 }
@@ -450,6 +486,105 @@ i {
     padding: 5px 0 5px 5px;
     margin-left: 5px;
 }
+
+
+
+
+/* _________________________ LOGIN/REGISTER ______________________ */
+#container-login-register {
+    padding: 30px 40px;
+    position: fixed;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    border-radius: 7px;
+    width: 75%;
+    box-shadow: 0px 0px 8px 0px rgb(135 135 135);
+    animation: ani-in .4s ease-in-out;
+}
+@keyframes ani-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+    
+}
+#container-login-register .tt-df,
+#container-login-register .tt-main {
+    display: inline;
+    padding: 0 5px;
+    color: var(--color-white);
+}
+#container-login-register .tt-main {
+    background-color: #363636;
+}
+#container-login-register .tt-df {
+    background-color: var(--color-yellow-banana);
+}
+#container-login-register .container-login {
+
+}
+#container-login-register form {
+    margin: 40px 0 20px;
+}
+#container-login-register .header {
+    position: absolute;
+    left: 0;
+    transition: left 0.4s ease-in-out;
+    padding: 0 40px;
+}
+#container-login-register input {
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    margin: 0 10px 30px 0;
+}
+
+
+#container-login-register a {
+    color: var(--color-yellow-banana);
+}
+#container-login-register .direct {
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    font-size: small;
+}
+#container-login-register button[type="submit"] {
+    float: right;
+    background-color: var(--color-yellow-banana);
+    color: var(--color-white);
+    padding: 12px var(--px-70);
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+
+#container-login-register .close {
+    position: absolute;
+    right: 0;
+    margin: 0 45px;
+    font-size: var(--fs-20);
+    color: var(--color-yellow-banana);
+}
+
+.blackscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000082;
+    z-index: 3;
+    /* display: none;     */
+}
 /* ___________________________________________________________________ */
 .hover-appear-toggle {
     visibility: hidden;
@@ -467,4 +602,10 @@ i {
     opacity: 1;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+.input-label input[type="file"] {
+    display: none; /* Ẩn thẻ input gốc */
+}
 /* ____________________________________ */
